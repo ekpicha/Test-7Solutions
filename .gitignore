@@ -3,10 +3,14 @@
 *.tfstate.backup
 *.tfvars
 .terraform.lock.hcl
+
 terraform.exe
 LICENSE.txt
+
 .vscode/
+
 gcp-service-account-key.json
-cmd.txt
+step-all.txt
+
 .DS_Store
 Thumbs.db
