@@ -1,0 +1,16 @@
+resources:
+  - deployment.yaml
+  - service.yaml
+  - namespace.yaml
+
+labels:
+- includeSelectors: true
+  includeTemplates: true
+  pairs:
+    app: go-app
+
+# namePrefix:
+#   kustom-
+
+nameSuffix:
+  -7s

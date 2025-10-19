@@ -1,0 +1,10 @@
+resources:
+  - ../../base
+
+namespace: dev
+
+patches:
+  - path: replicas.yaml
+
+namePrefix:
+  dev-kustom-
