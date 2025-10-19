@@ -1,0 +1,5 @@
+- kustomize
+kubectl kustomize ..\flex\dev | kubectl apply -f -
+kubectl apply -k ..\flex\dev
+kubectl apply -k ..\flex\prod
+kubectl get all -n dev

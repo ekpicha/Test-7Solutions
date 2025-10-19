@@ -1,0 +1,12 @@
+- terraform
+create service acc and key --> get gcp-service-account-key.json
+enable API/Service --> Compute Engine API
+enable API/Service --> Kubernetes Engine API
+terraform init
+terraform fmt --> terraform validate
+terraform plan --> terraform apply --auto-approve
+terraform state list
+
+- gcp remote
+gcloud container clusters get-credentials terraform-gke-cluster-7s --zone us-central1-a --project solutions-test-475602
+kubectl get node -o wide

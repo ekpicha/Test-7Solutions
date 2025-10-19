@@ -1,0 +1,7 @@
+- registry
+docker build -t ekpicha/assignment-7s:20251018 .
+docker login
+docker push ekpicha/assignment-7s:20251018
+
+Docker Hub url : https://hub.docker.com/r/ekpicha/assignment-7s
+
