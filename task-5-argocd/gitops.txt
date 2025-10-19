@@ -1,0 +1,18 @@
+- todo
+remote to gke cluster install argocd --> gcloud container clusters get-credentials terraform-gke-cluster-7s --zone us-central1-a --project solutions-test-475602
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+change svc argocd-server from ClusterIP to LoadBalancer --> kubectl edit svc argocd-server -n argocd
+access argocd UI with LoadBalancerIP:Port
+user : admin 
+pass --> kubectl get secrets -n argocd 
+    --> kubectl edit secret argocd-initial-admin-secret -n argocd
+    --> echo ...HRwd... | base64 --decode
+
+- argocd UI only
+go to argocd
+config application
+
+- argocd yaml only
+kubectl apply -f argocd-app-dev.yaml
+kubectl apply -f argocd-app-prod.yaml
