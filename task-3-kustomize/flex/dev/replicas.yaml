@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: go-app-deployment
 spec:
-  replicas: 3 # changed
+  replicas: 2 # changed
   template:
     spec:
       containers:
